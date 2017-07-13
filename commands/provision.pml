@@ -1,0 +1,1 @@
+systemPath(path: "{{ product.redisHome }}/bin")
