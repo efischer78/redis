@@ -1,7 +1,7 @@
 owner "redis" systemPassword "redis"
 
 redisHome "/logiciels/redis-3.2.5"
-port 6379 exposed("REDIS_PORT")
+port 6379 exposed("REDIS_PORT") exported()
 domainName "myredis"
 domainHome "/appli/{{ product.domainName }}" domainHome() directory() owner "{{ product.owner }}" command "deploy"
 logDir "/var/{{ product.domainName }}" directory() persistent("REDIS_LOG") owner "{{ product.owner }}" command "deploy"
