@@ -1,1 +1,1 @@
-systemPath(path: "{{ product.redisHome }}/bin")
+systemPath(path: "${ product.redisHome }/bin")
